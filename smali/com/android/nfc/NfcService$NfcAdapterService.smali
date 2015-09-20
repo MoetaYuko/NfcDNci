@@ -2074,3 +2074,8 @@
     .line 1515
     return-void
 .end method
+
+.method public verifyNfcPermission()V
+    .locals 1
+    return-void
+.end method
