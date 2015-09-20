@@ -234,40 +234,6 @@
 
     invoke-static {v2, v3}, Lcom/android/nfc/handover/P2PHandoverClientSession;->access$200(Lcom/android/nfc/handover/P2PHandoverClientSession;I)V
 
-    .line 191
-    :try_start_22
-    iget-object v2, p0, Lcom/android/nfc/handover/P2PHandoverClientSession$1;->this$0:Lcom/android/nfc/handover/P2PHandoverClientSession;
-
-    invoke-static {v2}, Lcom/android/nfc/handover/P2PHandoverClientSession;->access$300(Lcom/android/nfc/handover/P2PHandoverClientSession;)Landroid/net/wifi/p2p/WifiP2pManager;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/nfc/handover/P2PHandoverClientSession$1;->this$0:Lcom/android/nfc/handover/P2PHandoverClientSession;
-
-    invoke-static {v3}, Lcom/android/nfc/handover/P2PHandoverClientSession;->access$400(Lcom/android/nfc/handover/P2PHandoverClientSession;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    invoke-static {v2, v3, v0, v4}, Lcom/huawei/android/net/wifi/p2p/NfcWifiP2pManagerEx;->beam_connect(Landroid/net/wifi/p2p/WifiP2pManager;Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
-    :try_end_32
-    .catch Lcom/huawei/android/util/NoExtAPIException; {:try_start_22 .. :try_end_32} :catch_33
-
-    .line 196
-    .end local v0    # "config":Landroid/net/wifi/p2p/WifiP2pConfig;
     :cond_32
-    :goto_32
     return-void
-
-    .line 192
-    .restart local v0    # "config":Landroid/net/wifi/p2p/WifiP2pConfig;
-    :catch_33
-    move-exception v1
-
-    .line 193
-    .local v1, "e":Lcom/huawei/android/util/NoExtAPIException;
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
-
-    goto :goto_32
 .end method

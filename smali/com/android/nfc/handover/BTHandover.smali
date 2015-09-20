@@ -194,9 +194,6 @@
     .line 544
     invoke-virtual {p0}, Lcom/android/nfc/handover/BTHandover;->fastConComplete()V
 
-    .line 545
-    invoke-virtual {p0}, Lcom/android/nfc/handover/BTHandover;->clearNfcFastConWhiteList()V
-
     .line 546
     invoke-direct {p0}, Lcom/android/nfc/handover/BTHandover;->stopConnectTimer()V
 
@@ -314,40 +311,6 @@
 
 
 # virtual methods
-.method addNfcFastConWhiteList(Ljava/lang/String;)V
-    .registers 4
-    .param p1, "address"    # Ljava/lang/String;
-
-    .prologue
-    .line 587
-    iget-object v1, p0, Lcom/android/nfc/handover/BTHandover;->mDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v1, :cond_9
-
-    .line 589
-    :try_start_4
-    iget-object v1, p0, Lcom/android/nfc/handover/BTHandover;->mDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-static {v1, p1}, Lcom/huawei/android/bluetooth/NfcBluetoothDeviceEx;->addNfcPairingWhiteList(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;)V
-    :try_end_9
-    .catch Lcom/huawei/android/util/NoExtAPIException; {:try_start_4 .. :try_end_9} :catch_a
-
-    .line 594
-    :cond_9
-    :goto_9
-    return-void
-
-    .line 590
-    :catch_a
-    move-exception v0
-
-    .line 591
-    .local v0, "e":Lcom/huawei/android/util/NoExtAPIException;
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    goto :goto_9
-.end method
-
 .method public btFastConBroadcastRegister()V
     .registers 4
 
@@ -413,39 +376,6 @@
 
     .line 187
     return-void
-.end method
-
-.method clearNfcFastConWhiteList()V
-    .registers 3
-
-    .prologue
-    .line 572
-    iget-object v1, p0, Lcom/android/nfc/handover/BTHandover;->mDevice:Landroid/bluetooth/BluetoothDevice;
-
-    if-eqz v1, :cond_9
-
-    .line 574
-    :try_start_4
-    iget-object v1, p0, Lcom/android/nfc/handover/BTHandover;->mDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-static {v1}, Lcom/huawei/android/bluetooth/NfcBluetoothDeviceEx;->clearNfcPairingWhiteList(Landroid/bluetooth/BluetoothDevice;)V
-    :try_end_9
-    .catch Lcom/huawei/android/util/NoExtAPIException; {:try_start_4 .. :try_end_9} :catch_a
-
-    .line 579
-    :cond_9
-    :goto_9
-    return-void
-
-    .line 575
-    :catch_a
-    move-exception v0
-
-    .line 576
-    .local v0, "e":Lcom/huawei/android/util/NoExtAPIException;
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    goto :goto_9
 .end method
 
 .method public createDataRecord()Landroid/nfc/NdefRecord;
@@ -1077,15 +1007,6 @@
 
     .line 392
     if-eq v1, v9, :cond_a7
-
-    .line 393
-    iget-object v6, p0, Lcom/android/nfc/handover/BTHandover;->mDevice:Landroid/bluetooth/BluetoothDevice;
-
-    invoke-virtual {v6}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {p0, v6}, Lcom/android/nfc/handover/BTHandover;->addNfcFastConWhiteList(Ljava/lang/String;)V
 
     .line 394
     invoke-direct {p0}, Lcom/android/nfc/handover/BTHandover;->startConnectTimer()V

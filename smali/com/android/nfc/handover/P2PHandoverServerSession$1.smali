@@ -92,30 +92,7 @@
     :try_start_1c
     iget-object v1, p0, Lcom/android/nfc/handover/P2PHandoverServerSession$1;->this$0:Lcom/android/nfc/handover/P2PHandoverServerSession;
 
-    invoke-static {v1}, Lcom/android/nfc/handover/P2PHandoverServerSession;->access$800(Lcom/android/nfc/handover/P2PHandoverServerSession;)Landroid/net/wifi/p2p/WifiP2pManager;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/nfc/handover/P2PHandoverServerSession$1;->this$0:Lcom/android/nfc/handover/P2PHandoverServerSession;
-
-    invoke-static {v2}, Lcom/android/nfc/handover/P2PHandoverServerSession;->access$900(Lcom/android/nfc/handover/P2PHandoverServerSession;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/nfc/handover/P2PHandoverServerSession$1;->this$0:Lcom/android/nfc/handover/P2PHandoverServerSession;
-
-    invoke-static {v3}, Lcom/android/nfc/handover/P2PHandoverServerSession;->access$1000(Lcom/android/nfc/handover/P2PHandoverServerSession;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    invoke-static {v1, v2, v3, v4}, Lcom/huawei/android/net/wifi/p2p/NfcWifiP2pManagerEx;->removeP2PValidDevice(Landroid/net/wifi/p2p/WifiP2pManager;Landroid/net/wifi/p2p/WifiP2pManager$Channel;Ljava/lang/String;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
-    :try_end_32
-    .catch Lcom/huawei/android/util/NoExtAPIException; {:try_start_1c .. :try_end_32} :catch_66
-
     .line 190
-    :goto_32
     iget-object v1, p0, Lcom/android/nfc/handover/P2PHandoverServerSession$1;->this$0:Lcom/android/nfc/handover/P2PHandoverServerSession;
 
     invoke-static {v1}, Lcom/android/nfc/handover/P2PHandoverServerSession;->access$400(Lcom/android/nfc/handover/P2PHandoverServerSession;)Lcom/android/nfc/handover/P2PHandover;
@@ -173,16 +150,6 @@
     .line 200
     :cond_65
     return-void
-
-    .line 187
-    :catch_66
-    move-exception v0
-
-    .line 188
-    .local v0, "e":Lcom/huawei/android/util/NoExtAPIException;
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    goto :goto_32
 .end method
 
 .method public serverCreateSuccess(Landroid/net/wifi/p2p/WifiP2pInfo;)V

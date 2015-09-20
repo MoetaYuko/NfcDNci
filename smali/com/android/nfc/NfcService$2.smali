@@ -57,22 +57,6 @@
 
     move-result-object v0
 
-    .line 3910
-    .local v0, "action":Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/nfc/NfcService$2;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v4, v4, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "is_boot"
-
-    const-string v6, "true"
-
-    invoke-static {v4, v5, v6}, Lcom/huawei/android/provider/SettingsEx$Systemex;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
-
     .line 3912
     if-eqz v0, :cond_b3
 
@@ -84,39 +68,12 @@
 
     if-eqz v4, :cond_b3
 
-    .line 3913
-    iget-object v4, p0, Lcom/android/nfc/NfcService$2;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v4, v4, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "is_boot"
-
-    const-string v6, "true"
-
-    invoke-static {v4, v5, v6}, Lcom/huawei/android/provider/SettingsEx$Systemex;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
-
     .line 3917
     :cond_34
     :goto_34
     iget-object v4, p0, Lcom/android/nfc/NfcService$2;->this$0:Lcom/android/nfc/NfcService;
 
-    iget-object v5, p0, Lcom/android/nfc/NfcService$2;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v5, v5, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v5
-
-    const-string v6, "is_boot"
-
-    invoke-static {v5, v6}, Lcom/huawei/android/provider/SettingsEx$Systemex;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
+    const-string v5, "true"
 
     iput-object v5, v4, Lcom/android/nfc/NfcService;->mIsBoot:Ljava/lang/String;
 
@@ -264,21 +221,6 @@
     move-result v4
 
     if-eqz v4, :cond_34
-
-    .line 3915
-    iget-object v4, p0, Lcom/android/nfc/NfcService$2;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v4, v4, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string v5, "is_boot"
-
-    const-string v6, "flase"
-
-    invoke-static {v4, v5, v6}, Lcom/huawei/android/provider/SettingsEx$Systemex;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     goto/16 :goto_34
 

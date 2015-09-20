@@ -1213,22 +1213,7 @@
     :cond_38
     invoke-direct {p0}, Lcom/android/nfc/handover/P2PHandoverServerSession;->stopConnectTimer()V
 
-    .line 448
-    :try_start_3b
-    iget-object v1, p0, Lcom/android/nfc/handover/P2PHandoverServerSession;->manager:Landroid/net/wifi/p2p/WifiP2pManager;
-
-    iget-object v2, p0, Lcom/android/nfc/handover/P2PHandoverServerSession;->channel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-
-    iget-object v3, p0, Lcom/android/nfc/handover/P2PHandoverServerSession;->validKey:Ljava/lang/String;
-
-    const/4 v4, 0x0
-
-    invoke-static {v1, v2, v3, v4}, Lcom/huawei/android/net/wifi/p2p/NfcWifiP2pManagerEx;->removeP2PValidDevice(Landroid/net/wifi/p2p/WifiP2pManager;Landroid/net/wifi/p2p/WifiP2pManager$Channel;Ljava/lang/String;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
-    :try_end_45
-    .catch Lcom/huawei/android/util/NoExtAPIException; {:try_start_3b .. :try_end_45} :catch_6b
-
     .line 452
-    :goto_45
     new-instance v1, Lcom/android/nfc/handover/P2PHandover$P2pHandoverData;
 
     invoke-direct {v1}, Lcom/android/nfc/handover/P2PHandover$P2pHandoverData;-><init>()V
@@ -1272,16 +1257,6 @@
     invoke-virtual {v1}, Lcom/android/nfc/handover/TransmitManager;->stopServer()Z
 
     goto :goto_22
-
-    .line 449
-    :catch_6b
-    move-exception v0
-
-    .line 450
-    .local v0, "e":Lcom/huawei/android/util/NoExtAPIException;
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    goto :goto_45
 .end method
 
 .method private stopConnect(I)V

@@ -85,22 +85,6 @@
 
     if-eqz v0, :cond_b
 
-    .line 1827
-    :try_start_17
-    iget-object v0, p0, Lcom/android/nfc/handover/WiFiHandover$5;->this$0:Lcom/android/nfc/handover/WiFiHandover;
-
-    invoke-static {v0}, Lcom/android/nfc/handover/WiFiHandover;->access$300(Lcom/android/nfc/handover/WiFiHandover;)Landroid/net/wifi/WifiManager;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/huawei/android/net/wifi/WifiManagerEx;->getApLinkedStaList(Landroid/net/wifi/WifiManager;)Ljava/util/List;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/nfc/handover/WiFiHandover$5;->staList:Ljava/util/List;
-    :try_end_23
-    .catch Lcom/huawei/android/util/NoExtAPIException; {:try_start_17 .. :try_end_23} :catch_2d
-
     .line 1831
     :goto_23
     iget-object v0, p0, Lcom/android/nfc/handover/WiFiHandover$5;->staList:Ljava/util/List;
@@ -114,18 +98,7 @@
 
     goto :goto_e
 
-    .line 1828
-    :catch_2d
-    move-exception v6
-
-    .line 1829
-    .local v6, "e":Lcom/huawei/android/util/NoExtAPIException;
-    invoke-virtual {v6}, Ljava/lang/Throwable;->printStackTrace()V
-
-    goto :goto_23
-
     .line 1835
-    .end local v6    # "e":Lcom/huawei/android/util/NoExtAPIException;
     :cond_32
     const/4 v7, 0x0
 

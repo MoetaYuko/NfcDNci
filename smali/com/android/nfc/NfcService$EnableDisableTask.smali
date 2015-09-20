@@ -545,24 +545,6 @@
 
     move-result v0
 
-    .line 871
-    .local v0, "airplaneOverride":Z
-    iget-object v1, p0, Lcom/android/nfc/NfcService$EnableDisableTask;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v1, v1, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v1
-
-    const-string v2, "nfc_enable"
-
-    invoke-static {v1, v2, v5}, Lcom/huawei/android/provider/SettingsEx$Systemex;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v1
-
-    if-nez v1, :cond_72
-
     .line 872
     sput-boolean v4, Lcom/android/nfc/NfcService;->NFC_ON_DEFAULT:Z
 

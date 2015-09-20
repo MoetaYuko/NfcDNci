@@ -53,19 +53,7 @@
     .line 3845
     iget-object v7, p0, Lcom/android/nfc/NfcService$NfcThread;->this$0:Lcom/android/nfc/NfcService;
 
-    iget-object v8, p0, Lcom/android/nfc/NfcService$NfcThread;->this$0:Lcom/android/nfc/NfcService;
-
-    iget-object v8, v8, Lcom/android/nfc/NfcService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v8}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v8
-
-    const-string v9, "is_boot"
-
-    invoke-static {v8, v9}, Lcom/huawei/android/provider/SettingsEx$Systemex;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
+    const-string v8, "true"
 
     iput-object v8, v7, Lcom/android/nfc/NfcService;->mIsBoot:Ljava/lang/String;
 
