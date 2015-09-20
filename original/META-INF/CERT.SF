@@ -1,0 +1,142 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: AU+1SeCxAeZXJ2esdOFDs19A1WI=
+
+Name: res/drawable-mdpi/tap_again.png
+SHA1-Digest-Manifest: hHmgz2TvnIUVTqcCXYYuTYgQWck=
+
+Name: res/layout/screenshot.xml
+SHA1-Digest-Manifest: RZ92t8DMTgkBX5U+qJRI7rSLAZw=
+
+Name: res/drawable-xxhdpi/ic_menu_cancel_holo_dark.png
+SHA1-Digest-Manifest: Dpgy+2xd3NPII/tjXIN1jfeFDVE=
+
+Name: res/drawable-xxhdpi/stat_sys_download_done.png
+SHA1-Digest-Manifest: Q6V0XA1TuoVEau6hpkomWLTXSO0=
+
+Name: res/layout/cardemu_resolver.xml
+SHA1-Digest-Manifest: nRvEDyEoFzin9yplrVTaCmQN97E=
+
+Name: res/drawable-mdpi/back.png
+SHA1-Digest-Manifest: KeXJS+5RX6KkV6gxXccNvjRrO8s=
+
+Name: res/layout/nfc_transfer_item.xml
+SHA1-Digest-Manifest: VqqS4757Iw+6+R21XuLhFCMHzoQ=
+
+Name: res/layout-fa/nfc_transfer_item.xml
+SHA1-Digest-Manifest: LaUs56oq1rtVnbX75zXTRIN7FuI=
+
+Name: resources.arsc
+SHA1-Digest-Manifest: SUcdmPANSqmoYFwZbOGYN0rtuQw=
+
+Name: res/layout/nfc_transfers_page.xml
+SHA1-Digest-Manifest: xZpCs1AiVi5dYLv9ltvO9K7Qc2k=
+
+Name: res/drawable-xhdpi/tap_again.png
+SHA1-Digest-Manifest: 0hc3cUYOKVzqZ4m2ivpwv+AYdZk=
+
+Name: res/drawable-mdpi/ic_menu_cancel_holo_dark.png
+SHA1-Digest-Manifest: B4Cf2rx98Mjky019Zbu2CuW7nQg=
+
+Name: res/layout/tapagain.xml
+SHA1-Digest-Manifest: QbWTAnsPhV0cO8NVEZ9aFrT50HM=
+
+Name: res/drawable-xxhdpi/ic_nofile.png
+SHA1-Digest-Manifest: WInX5MB2J34/qZJreL6ZomE1/xU=
+
+Name: AndroidManifest.xml
+SHA1-Digest-Manifest: CUNkpuuqAIYiIREVKB5Y15HcTcY=
+
+Name: res/menu/transferhistory.xml
+SHA1-Digest-Manifest: 3FtE8NJGQnoz+HcqtnU+vmrTYPQ=
+
+Name: res/menu/receivedfilescontextfinished.xml
+SHA1-Digest-Manifest: lU5GpJpTPW7m1ZzD271QRlv1jXM=
+
+Name: res/drawable-hdpi/tap_again.png
+SHA1-Digest-Manifest: M0VfhoPxYgRzrz1+x1+gnM/mg7E=
+
+Name: res/drawable-xhdpi/stat_sys_upload_done.png
+SHA1-Digest-Manifest: UCsI63J9N6Hx7zq7SMVNmHhiZpY=
+
+Name: res/layout/cardemu_item.xml
+SHA1-Digest-Manifest: mtht3i0fTrtCYRbEuIK+4s6WVkQ=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest-Manifest: Vw6CzKDclf7+btZ3z9lbQpXbNYE=
+
+Name: res/drawable-xxhdpi/icon.png
+SHA1-Digest-Manifest: tYk0nolFIWIOV3kzltl0v+tyKOc=
+
+Name: res/layout-ar/nfc_transfer_item.xml
+SHA1-Digest-Manifest: cw1Aejssw0GJK59iiNkG9kSjblw=
+
+Name: res/drawable-hdpi/nfc.png
+SHA1-Digest-Manifest: IdSQb/d9lTCsA7ZcGXOiVjO38ew=
+
+Name: res/drawable-xhdpi/ic_menu_cancel_holo_dark.png
+SHA1-Digest-Manifest: poSEITUSjoADN/yEg6ae1oRpgjk=
+
+Name: res/drawable-xxhdpi/stat_notify_error.png
+SHA1-Digest-Manifest: +STxBtWpiVp7vY6fmZ451x81EdI=
+
+Name: res/drawable-hdpi/stat_notify_error.png
+SHA1-Digest-Manifest: kUtoBwIKRVPGBTc8u+j0noAKCgU=
+
+Name: res/layout/nfc_tag_dialog.xml
+SHA1-Digest-Manifest: Zti4T9HObJyQA2YDQgwzi94AtuU=
+
+Name: res/layout/cardemu_payment_item.xml
+SHA1-Digest-Manifest: mmJ1N/7UiYeZeWqVRjE6D+ssVVQ=
+
+Name: res/drawable-xhdpi/icon.png
+SHA1-Digest-Manifest: UeYiF1GOSna+7qh3Zy4iZVGkV4Y=
+
+Name: res/layout/no_transfers.xml
+SHA1-Digest-Manifest: t3eDNncCieG2a4FZawmC3J0rsas=
+
+Name: res/raw/start.ogg
+SHA1-Digest-Manifest: cXeh+PQIhHJKeh/UtH/cK86P0Mc=
+
+Name: res/drawable-xxhdpi/tap_again.png
+SHA1-Digest-Manifest: EILAr92fJGxPor2BknpmfujyeAE=
+
+Name: assets/star.png
+SHA1-Digest-Manifest: 8hkqAnrx9gZjjQP7dqKsejjOga0=
+
+Name: res/drawable-xhdpi/ic_nofile.png
+SHA1-Digest-Manifest: a1FZo8bb0Tyz7jm9t67Ke9+fOnU=
+
+Name: classes.dex
+SHA1-Digest-Manifest: FWxQz8NAR3GlWWA1OS78oPQhAk0=
+
+Name: res/drawable-hdpi/stat_sys_upload_done.png
+SHA1-Digest-Manifest: zrlw/uauBr3njrDaDIzSTxp1fmI=
+
+Name: res/drawable-xxhdpi/stat_sys_upload_done.png
+SHA1-Digest-Manifest: drPYFAZpvxnIDcbRYyXPer95flY=
+
+Name: res/drawable-xhdpi/stat_notify_error.png
+SHA1-Digest-Manifest: 89N76rsHtKTkCvh+U2qPV3SM99c=
+
+Name: res/raw/end.ogg
+SHA1-Digest-Manifest: W9Uf3V4Z6DgEFjVDUUbkcHL0JLk=
+
+Name: res/drawable-xhdpi/stat_sys_download_done.png
+SHA1-Digest-Manifest: kb7YCmK3ScZPLPXsqzH9N0G/1UY=
+
+Name: res/drawable-hdpi/ic_nofile.png
+SHA1-Digest-Manifest: 7y4RICiZrvqiahm62m+PR5yrvtM=
+
+Name: res/drawable-hdpi/ic_menu_cancel_holo_dark.png
+SHA1-Digest-Manifest: Jg4Y/NIBFi6FflH6OxLlb3rHXsI=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest-Manifest: 3DEirAGyQn+x2OoJ9CYd/UbKf7k=
+
+Name: res/raw/error.ogg
+SHA1-Digest-Manifest: xguzqlJ9jjBAWU09Ql1huLEwwIQ=
+
+Name: res/drawable-hdpi/stat_sys_download_done.png
+SHA1-Digest-Manifest: +n1l0MqR80CtwXTR3LYWpBLF62U=
+
