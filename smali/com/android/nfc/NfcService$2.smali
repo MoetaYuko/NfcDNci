@@ -94,11 +94,11 @@
     if-eqz v4, :cond_ce
 
     .line 3923
-    invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
+    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
     move-result-object v4
 
-    invoke-virtual {v4, v7}, Landroid/telephony/MSimTelephonyManager;->getSimState(I)I
+    invoke-virtual {v4, v7}, Landroid/telephony/TelephonyManager;->getSimState(I)I
 
     move-result v1
 
@@ -106,22 +106,22 @@
     .local v1, "simState":I
     iget-object v4, p0, Lcom/android/nfc/NfcService$2;->this$0:Lcom/android/nfc/NfcService;
 
-    invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
+    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
     move-result-object v5
 
-    invoke-virtual {v5, v7}, Landroid/telephony/MSimTelephonyManager;->getSubscriberId(I)Ljava/lang/String;
+    invoke-virtual {v5, v7}, Landroid/telephony/TelephonyManager;->getSubscriberId(I)Ljava/lang/String;
 
     move-result-object v5
 
     iput-object v5, v4, Lcom/android/nfc/NfcService;->imsi:Ljava/lang/String;
 
     .line 3925
-    invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
+    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/telephony/MSimTelephonyManager;->getDefaultSubscription()I
+    invoke-virtual {v4}, Landroid/telephony/TelephonyManager;->getDefaultSubscription()I
 
     move-result v2
 
